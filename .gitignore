@@ -19,6 +19,8 @@ _cgo_export.*
 
 _testmain.go
 
+config.py
+
 *.exe
 *.test
 *.prof

@@ -14,7 +14,8 @@
   <body>
     <form action="/create" method="post">
       <div class="col-md-12">
-        <h1 class="text-center">Instabot Configuration Generator :)</h1>
+        <a href="https://github.com/Conorbro/instagram-bot-config-generator" target="_blank"><h1 class="text-center">Instabot Configuration Generator <i class="fa fa-github" aria-hidden="true"></i></h1></a>
+
         <div class="container">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">@</span>
@@ -97,4 +98,7 @@
 
     </form>
   </body>
+
+  <script src="https://use.fontawesome.com/37e15bbe12.js"></script>
+
 </html>
