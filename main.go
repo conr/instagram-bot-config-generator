@@ -100,5 +100,5 @@ func createConfig(res http.ResponseWriter, req *http.Request) {
 // Main method for routing requests
 func main() {
 	http.HandleFunc("/", createConfig)
-	http.ListenAndServe(":9000", nil)
+	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 }
