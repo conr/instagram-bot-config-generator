@@ -22,7 +22,6 @@ func (i *instaBotConfig) writeConfigToFile(file *os.File) {
 	file.WriteString(initString)
 	rv := reflect.ValueOf(i)
 	num := rv.Elem().NumField()
-	file.WriteString("user_blacklist={},\r")
 	for i := 0; i < num; i++ {
 		fi := rv.Elem().Field(i)
 		sf := rv.Elem().Type().Field(i).Name
