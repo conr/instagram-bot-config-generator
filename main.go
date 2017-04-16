@@ -41,9 +41,12 @@ func (i *instaBotConfig) writeConfigToFile(file *os.File) {
 			file.WriteString(sf + "=" + s)
 			if i == (num - 1) {
 				file.WriteString(")\r")
+			} else if i == 5 {
+				file.WriteString(",\r user_blacklist={},\r")
 			} else {
 				file.WriteString(",\r")
 			}
+
 		default:
 			continue
 		}
@@ -102,4 +105,5 @@ func createConfig(res http.ResponseWriter, req *http.Request) {
 func main() {
 	http.HandleFunc("/", createConfig)
 	http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+	// http.ListenAndServe(":5000", nil)
 }
