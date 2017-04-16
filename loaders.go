@@ -30,8 +30,8 @@ func (i *instaBotConfig) LoadValue(name string, value []string) {
 		i.tag_list = value
 	case "hashtagsBlacklist":
 		i.tag_blacklist = value
-	case "usersBlacklist":
-		i.user_blacklist = value
+	// case "usersBlacklist":
+	// 	i.user_blacklist = value
 	case "maxLikesPerHashtag":
 		i.max_like_for_one_tag, err = strconv.Atoi(value[0])
 	case "followsPerDay":

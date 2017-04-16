@@ -1,13 +1,13 @@
 package main
 
 type instaBotConfig struct {
-	login                  string
-	password               string
-	like_per_day           int
-	comments_per_day       int
-	tag_list               []string
-	tag_blacklist          []string
-	user_blacklist         []string
+	login            string
+	password         string
+	like_per_day     int
+	comments_per_day int
+	tag_list         []string
+	tag_blacklist    []string
+	// user_blacklist         []string
 	max_like_for_one_tag   int
 	follow_per_day         int
 	follow_time            int
